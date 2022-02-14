@@ -1,9 +1,10 @@
 <!DOCTYPE html>
+<%@ taglib prefix="spring" uri="http://www.springframework.org/tags" %>
 <%@ page contentType="text/html; charset=UTF-8" %>
 <head>
     <meta charset="UTF-8">
     <title>HPlus</title>
-  <link rel="stylesheet" href="css/style.css" type="text/css"/>
+  <link rel="stylesheet" href="<spring:theme code='styleSheet'/>" type="text/css"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
@@ -14,10 +15,10 @@
                 <a href="#home"><img src="images/hpluslogo.svg" alt="Logo - H Plus Sports"></a>
             </div><!-- branding -->
             <ul class="navbar">
-                <li><a href="/home">home</a></li>
-                <li><a href="/goToLogin">login</a></li>
-                <li><a href="/goToSearch">search</a></li>
-                <li><a href="redirect">linkedin</a></li>
+                <li><a href="/home"><spring:message code="label.home"/></a></li>
+                <li><a href="/goToLogin"><spring:message code="label.login"/></a></li>
+                <li><a href="/goToSearch"><spring:message code="label.search"/></a></li>
+                <li><a href="/redirectToLinkedin"><spring:message code="label.linkedin"/></a></li>
             </ul><!-- navbar -->
         </div><!-- container nav-elements -->
     </nav>
